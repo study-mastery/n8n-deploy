@@ -1,11 +1,12 @@
 FROM n8nio/n8n
 
-# Optional: Add default credentials
+# Add default credentials
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin123
 
-# Port required by Railway
+# Port used by n8n
 EXPOSE 5678
 
+# Start n8n
 CMD ["n8n"]
