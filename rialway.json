@@ -1,14 +1,8 @@
 {
-  "services": [
-    {
-      "name": "n8n",
-      "startCommand": "n8n start",
-      "ports": [
-        {
-          "port": 5678,
-          "expose": true
-        }
-      ]
-    }
-  ]
+  "build": {
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "n8n"
+  }
 }
